@@ -1,8 +1,8 @@
-//container Component for Home
 import React from 'react'
 import HomePresenter from "./HomePresenter";
 import { moviesApi } from "../../api";
 
+//container Component for Home
 export default class extends React.Component {
     state ={
         nowPlaying: null,
@@ -25,8 +25,7 @@ export default class extends React.Component {
             const { 
                 data: { results: popular } 
             } = await moviesApi.popular();
-            //throw Error();
-            //setState
+           
             this.setState( {
                 nowPlaying,
                 upcoming,
@@ -46,7 +45,6 @@ export default class extends React.Component {
 
     render() {
         const { nowPlaying, upcoming, popular,error, loading } = this.state;
-        //console.log(this.state);
         return <HomePresenter 
                  nowPlaying={nowPlaying} 
                  upcoming={upcoming} 

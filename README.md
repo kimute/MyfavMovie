@@ -21,3 +21,4 @@ a favorite Movie Search Web created by React & ES6
 - styled-reset(for reset css)
 - Axios (for get API )
 - prop-types
+- React-player(for Youtube)

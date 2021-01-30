@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-// sendna message when find nothing or occur error
+// send a message when find nothing or occur error
+//エラーメッセージ表示機能
+
+// css
 const Container = styled.div`
   width: 100vw;
   display: flex;

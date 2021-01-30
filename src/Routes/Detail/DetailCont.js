@@ -42,10 +42,8 @@ export default class extends React.Component {
             this.setState( { error: "Can't find !"} )
         } finally {
             this.setState ( { loading: false, result })
-
         }
     }
-
 
     render() {
         // see default props

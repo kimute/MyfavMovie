@@ -8,8 +8,25 @@ const api = axios.create({
         language: "en-US"
     }
 });
-//api.get("movie/popular");
 
+//get JSON parameters from API
+/*
+APIから習得した値は以下のように使用 
+　　HOME:
+    - nowPlaying(): to show now playing movies
+    - upcoming(): to show upcoming movies
+    - popular(): to show popular movies
+
+    MOVIE：
+    -favorate():show favorate movie
+    -unfavorate():show unfavorate movie
+
+    SEARCH：
+    - serach: to search movies by keyword
+
+    - movieDetail():映画の詳細を表示
+
+*/
 export const moviesApi = {
     nowPlaying:() =>api.get("movie/now_playing"),
     upcoming:() => api.get("movie/upcoming"),

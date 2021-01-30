@@ -6,6 +6,9 @@ import Section from "../../Components/Section";
 import Notice from "../../Components/Notice";
 import MoviePoster from "../../Components/MoviePoster";
 
+// Presenterviewの役：search container からもらった値を画面上に表示
+
+//css
 const Container =styled.div`
    padding: 20px;
 `;
@@ -21,7 +24,6 @@ const Input =styled.input`
    width: 100%;
 
 `;
-
 
 const SearchPresenter = ( {
     searchResult,

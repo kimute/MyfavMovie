@@ -11,16 +11,10 @@ export default class extends React.Component {
         loading: false
     };
 
-    /*for simulation
-    componentDidMount(){
-         this.handleSubmit();
-     }*/
-
     updateQuery = event =>{
         const { 
             target: { value }
         } = event;
-        //console.log(value);
         this.setState( {
             searchQuery: value
         });
@@ -33,7 +27,7 @@ export default class extends React.Component {
             this.searchByQuery();
         }
     };
-
+    // searchByQuery:入力したキーワード(searchQuery)から検査する関数
     searchByQuery = async () => {
         const { searchQuery } = this.state;
         this.setState({ loading:true })
@@ -48,13 +42,11 @@ export default class extends React.Component {
             this.setState({ error: "Can't find result "});
         } finally {
             this.setState( { loading: false} );
-
         }
     };
 
     render() {
         const { searchResult, searchQuery, error, loading } = this.state;
-        //console.log(this.state);
         return <SearchPresenter 
                  searchResult={searchResult} 
                  searchQuery={searchQuery}  
@@ -63,5 +55,5 @@ export default class extends React.Component {
                  handleSubmit={this.handleSubmit}
                  updateQuery={this.updateQuery}
                  />
-}
+    }
 }

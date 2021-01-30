@@ -6,6 +6,7 @@ import Loader from "../../Components/Loader";
 import Notice from "../../Components/Notice";
 import MoviePoster from "../../Components/MoviePoster";
 
+//show Home
 const Container = styled.div`
    padding:20px;
 `;

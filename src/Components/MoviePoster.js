@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-// for show movie poster
+// show movie poster
+// 各Presenter(Home,Movie, Search)で　Poster viewを表示の為使われる
 
 const Container = styled.div`
     font-size: 12px;
@@ -35,6 +36,7 @@ const ContainerForImage = styled.div`
         ${Rating} {
             opacity: 1;
             span {
+                l:2px;
                 color: yellow;
             }
         }
@@ -48,7 +50,7 @@ const Year = styled.div`
     font-size: 11px;
     color: #59dae2;
 `;
-//src/assets/default.png
+
 const MovePoster = ( {id, imageUrl, title, rating, year, isMovie = false} ) => (
 <Link to={isMovie? `/movie/${id} `:`/`}>
     <Container>
@@ -60,9 +62,8 @@ const MovePoster = ( {id, imageUrl, title, rating, year, isMovie = false} ) => (
                 : require("../assets/default.png") } />
             <Rating>
                 <span role="img" aria-label="rating">
-                <FontAwesomeIcon icon={faStar}  />
-                </span>{" "}
-                {rating}/10
+                <FontAwesomeIcon icon={faStar}/>
+                </span> {rating}/10
             </Rating>
         </ContainerForImage>
         <Title>{title.length >18 ? `${title.substring(0, 18)}...`: title}</Title>
@@ -70,7 +71,6 @@ const MovePoster = ( {id, imageUrl, title, rating, year, isMovie = false} ) => (
     </Container>
 </Link>
 );
-
 
 MovePoster.propTypes = {
     id: PropTypes.number.isRequired,

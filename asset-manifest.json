@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/favmovie/static/js/main.b02ae79e.chunk.js",
-    "main.js.map": "/favmovie/static/js/main.b02ae79e.chunk.js.map",
+    "main.js": "/favmovie/static/js/main.e4e2088c.chunk.js",
+    "main.js.map": "/favmovie/static/js/main.e4e2088c.chunk.js.map",
     "runtime-main.js": "/favmovie/static/js/runtime-main.83c90cac.js",
     "runtime-main.js.map": "/favmovie/static/js/runtime-main.83c90cac.js.map",
-    "static/js/2.f85f10c4.chunk.js": "/favmovie/static/js/2.f85f10c4.chunk.js",
-    "static/js/2.f85f10c4.chunk.js.map": "/favmovie/static/js/2.f85f10c4.chunk.js.map",
+    "static/js/2.b62f19f6.chunk.js": "/favmovie/static/js/2.b62f19f6.chunk.js",
+    "static/js/2.b62f19f6.chunk.js.map": "/favmovie/static/js/2.b62f19f6.chunk.js.map",
     "index.html": "/favmovie/index.html",
-    "static/js/2.f85f10c4.chunk.js.LICENSE.txt": "/favmovie/static/js/2.f85f10c4.chunk.js.LICENSE.txt",
+    "static/js/2.b62f19f6.chunk.js.LICENSE.txt": "/favmovie/static/js/2.b62f19f6.chunk.js.LICENSE.txt",
     "static/media/default.png": "/favmovie/static/media/default.c5771baf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.83c90cac.js",
-    "static/js/2.f85f10c4.chunk.js",
-    "static/js/main.b02ae79e.chunk.js"
+    "static/js/2.b62f19f6.chunk.js",
+    "static/js/main.e4e2088c.chunk.js"
   ]
 }

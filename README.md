@@ -5,12 +5,12 @@ a favorite Movie Search Web created by React & ES6
 ## Menu
 
 - [v] Home
-   -  Now Playing movie
-   -  Popular movie
-   -  Upcomming movie   
+  - Now Playing movie
+  - Popular movie
+  - Upcomming movie
 - [v] Movie
-   -  My favorate movie (over 8 rating)
-   -  My unfavorat movie (Horror movies) 
+  - My favorate movie (over 8 rating)
+  - My unfavorat movie (Horror movies)
 - [v] Search
 - [v] Detail
 
@@ -22,3 +22,8 @@ a favorite Movie Search Web created by React & ES6
 - Axios (for get API )
 - prop-types
 - React-player(for Youtube)
+
+## Deploy
+
+- netlify
+  https://hungry-bohr-7f0160.netlify.app/#/

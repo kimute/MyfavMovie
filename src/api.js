@@ -4,7 +4,7 @@ const My_Api_Key = process.env.REACT_APP_API_KEY;
 const api = axios.create({
     baseURL:"https://api.themoviedb.org/3/",
     params: {
-        api_key: "a9c9a23cab58bc15d3e06e888a2971ab",
+        api_key: My_Api_Key,
         language: "en-US"
     }
 });

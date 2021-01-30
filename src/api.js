@@ -4,7 +4,7 @@ const My_Api_Key = process.env.REACT_APP_API_KEY;
 const api = axios.create({
     baseURL:"https://api.themoviedb.org/3/",
     params: {
-        api_key: My_Api_Key,
+        api_key:"a9c9a23cab58bc15d3e06e888a2971ab",
         language: "en-US"
     }
 });
@@ -24,7 +24,7 @@ APIから習得した値は以下のように使用
     SEARCH：
     - serach: to search movies by keyword
 
-    - movieDetail():映画の詳細を表示
+    - movieDetail():映画の詳細を表示n
 
 */
 export const moviesApi = {
